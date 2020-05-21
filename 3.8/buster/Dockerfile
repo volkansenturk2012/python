@@ -95,4 +95,5 @@ RUN set -ex; \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
+RUN pip install Flask gunicorn pdfkit
 CMD ["python3"]
